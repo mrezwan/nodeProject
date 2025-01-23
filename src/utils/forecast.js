@@ -16,7 +16,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `It is currently ${body.current.temperature}°C out, but it feels like ${body.current.feelslike}°C and humidity ${body.current.humidity} There is a ${body.current.precip}% chance of rain, The local time is ${body.location.lacaltime}`
+        `It is currently ${body.current.temperature}°C out, but it feels like ${body.current.feelslike}°C and humidity is ${body.current.humidity}. There is ${body.current.precip}% chance of rain. The local time is ${body.location.localtime}.`
       );
     }
   });
